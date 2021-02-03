@@ -38,6 +38,31 @@ So, the flow of the chatbot is as follows:
 So as you can see here, for tag='goodbye' people can say it in multiple ways, so for a single tag goodbye their are multiple questions, and also if our chatbot only answers one single answer then it would be so boring, that's why we have multiple answers to the goodbye tag, and each time it will choose randomly from that set.  
 User Enters --> See you / see you later/ bye --> bot predicts tag='goodbye' --> inside intents.json looks for tag='goodbye' return random response from responses list. So that's the flow.
 
+# Usage:
+## Clone the repo:
+``` git clone https://github.com/Sanket758/AI-Chatbot-with-Tensorflow.git ```  
+``` cd AI-Chatbot-with-Tensorflow ```
+
+## Install requirements first  
+``` pip install -r requirements.txt ```    
+
+*You may need to download some nltk libraries manually. 
+``` import nltk ```
+ ```   nltk.download('punkt') ```
+```    nltk.download('stopwords')```
+ 
+
+## Make sure that you have the model and intents file available in your directory.  
+### For the Command-Line Version:  
+``` python Chatbot_v2_CLI.py ```
+
+### For GUI version use (uses Tkinter-Python):  
+ ```python Chatbot-GUI.py ```
+ 
+### For the Web version (uses Flask-python):  
+ ``` python flask_app.py ```
+ 
+
 
 ## Watch the demo here:  
 [![Demo for PVPP Assistant](https://img.youtube.com/vi/duDOyhrlYYw/0.jpg)](http://www.youtube.com/watch?v=duDOyhrlYYw "PVPPCOE Assistant")
