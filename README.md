@@ -43,13 +43,18 @@ User Enters --> See you / see you later/ bye --> bot predicts tag='goodbye' --> 
 ``` git clone https://github.com/Sanket758/AI-Chatbot-with-Tensorflow.git ```  
 ``` cd AI-Chatbot-with-Tensorflow ```
 
-## Install requirements first  
-``` pip install -r requirements.txt ```    
+## Install requirements first   
+``` pip install -r requirements.txt ```  
 
-*You may need to download some nltk libraries manually. 
-``` import nltk ```
- ```   nltk.download('punkt') ```
-```    nltk.download('stopwords')```
+*You may need to download some nltk libraries manually.   
+``` 
+    import nltk  
+    nltk.download('punkt')  
+    nltk.download('stopwords')  
+    nltk.download('wordnet')
+```    
+otherwise run -  
+``` python setup.py ```  
  
 
 ## Make sure that you have the model and intents file available in your directory.  
